@@ -13,13 +13,14 @@ This modification adds background colors per rank image for the rank selectbox i
 
 ### NOTE!
 If you already changed or edited MY_form_helper.php in your domain, do NOT upload this file. Instaed, add the "function form_dropdown_rank" contents to your existing My_form_helper.php file. 
-**Notice that you will have to put this function ABOVE the line
+
+**Notice that you will have to put this function ABOVE the line**
 
 ```
- 'require_once MODPATH.'core/helpers/Nova_form_helper.php';
+ require_once MODPATH.'core/helpers/Nova_form_helper.php';
 ```
 
-Otherwise, this function will not override the core function in nova.
+**Otherwise, this function will not override the core function in nova.**
 
 2. Upload [mod]/views/titan/admin/css/admin.css to [yourdomain]/views/[yourtemplate]/admin/css
 
